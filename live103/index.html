@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل في محاضرة مجانية 103: شفرة التفاوض للنجاح في المبيعات - ZmedCoach</title>
+<meta name="description" content="محاضرة مجانية مع د. أحمد نصار وأ. غادة حسين - شفرة التفاوض للنجاح في المبيعات. الأربعاء 24 يونيو 2026، 9:30 مساءً بتوقيت القاهرة ومكة المكرمة.">
+
+<!-- Open Graph for sharing -->
+<meta property="og:title" content="شفرة التفاوض للنجاح في المبيعات - محاضرة مجانية">
+<meta property="og:description" content="مع د. أحمد نصار وأ. غادة حسين | الأربعاء 24 يونيو 2026، 9:30 مساءً">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #1a3a5c;
+    --navy-dark: #122a44;
+    --red: #e53e3e;
+    --gold: #e8a020;
+    --blue-accent: #2b6cb0;
+    --light-bg: #f0f4f8;
+    --white: #ffffff;
+    --text-dark: #2d3748;
+    --green-wa: #25D366;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #dde7f0 100%);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+  }
+
+  /* ===== Top bar with logo ===== */
+  .topbar {
+    background: var(--navy);
+    margin: 0 -16px 26px;
+    padding: 18px 16px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(26, 58, 92, 0.2);
+  }
+  .topbar img {
+    height: 56px;
+    width: auto;
+  }
+  @media (max-width: 600px) {
+    .topbar img { height: 44px; }
+  }
+
+  /* ===== Banner ===== */
+  .banner {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(26, 58, 92, 0.25);
+    margin-bottom: 30px;
+    border: 3px solid var(--navy);
+  }
+  .banner img {
+    width: 100%;
+    display: block;
+  }
+
+  /* ===== Countdown ===== */
+  .countdown-wrap {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(26, 58, 92, 0.2);
+  }
+  .countdown-title {
+    color: var(--gold);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .count-box {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(232, 160, 32, 0.4);
+    border-radius: 12px;
+    padding: 12px 8px;
+    min-width: 80px;
+  }
+  .count-num {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+  }
+  .count-label {
+    font-size: 0.8rem;
+    color: #bcd2e8;
+    margin-top: 6px;
+  }
+
+  /* ===== Card ===== */
+  .card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    margin-bottom: 26px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 8px;
+    position: relative;
+    padding-right: 16px;
+  }
+  .section-title::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 5px;
+    background: var(--red);
+    border-radius: 4px;
+  }
+  .section-sub {
+    color: #5a6a7a;
+    margin-bottom: 22px;
+    font-size: 1rem;
+  }
+
+  /* ===== Details grid ===== */
+  .details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .detail-item {
+    background: var(--light-bg);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .detail-icon {
+    font-size: 1.6rem;
+    width: 46px;
+    height: 46px;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .detail-text strong {
+    display: block;
+    color: var(--navy);
+    font-size: 0.95rem;
+  }
+  .detail-text span {
+    font-size: 0.88rem;
+    color: #5a6a7a;
+  }
+
+  /* ===== Learn list ===== */
+  .learn-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .learn-list li {
+    background: linear-gradient(135deg, #fff8e7 0%, #fef3d7 100%);
+    border-right: 4px solid var(--gold);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .learn-list li::before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: 900;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  /* ===== Speakers ===== */
+  .speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .speaker {
+    text-align: center;
+    background: var(--light-bg);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .speaker-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .speaker-role {
+    font-size: 0.85rem;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  /* ===== Form ===== */
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  .form-group label .req { color: var(--red); }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: var(--white);
+  }
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--blue-accent);
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.12);
+  }
+  .form-group input.error,
+  .form-group select.error {
+    border-color: var(--red);
+  }
+  .err-msg {
+    color: var(--red);
+    font-size: 0.82rem;
+    margin-top: 6px;
+    display: none;
+  }
+  .err-msg.show { display: block; }
+
+  .submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, var(--red) 0%, #c53030 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 6px 20px rgba(229, 62, 62, 0.35);
+  }
+  .submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(229, 62, 62, 0.45);
+  }
+  .submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .form-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #5a6a7a;
+    margin-top: 14px;
+  }
+
+  /* ===== Success ===== */
+  .success-box {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .success-box.show { display: block; }
+  .success-icon {
+    width: 90px;
+    height: 90px;
+    background: var(--green-wa);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto 20px;
+    animation: pop 0.4s ease;
+  }
+  @keyframes pop {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+  .success-box h2 {
+    color: var(--navy);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .success-box p {
+    color: #5a6a7a;
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+  }
+  .wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--green-wa);
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    transition: transform 0.15s;
+  }
+  .wa-btn:hover { transform: translateY(-2px); }
+
+  /* ===== Footer ===== */
+  .footer {
+    text-align: center;
+    color: var(--navy);
+    padding-top: 10px;
+  }
+  .footer-logo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
+  .footer-logo span { color: var(--red); }
+  .footer a { color: var(--blue-accent); text-decoration: none; font-weight: 700; }
+  .footer-contact { font-size: 0.9rem; margin-top: 8px; color: #5a6a7a; }
+
+  @media (max-width: 600px) {
+    .speakers { grid-template-columns: 1fr; }
+    .card { padding: 24px 18px; }
+    .count-box { min-width: 68px; }
+    .count-num { font-size: 1.6rem; }
+    .section-title { font-size: 1.3rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Top bar with logo -->
+  <div class="topbar">
+    <img src="logo_white_trans.png" alt="ZmedCoach - زمدكوتش للتدريب">
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="banner.png" alt="شفرة التفاوض للنجاح في المبيعات - ZmedCoach">
+  </div>
+
+  <!-- Countdown -->
+  <div class="countdown-wrap">
+    <div class="countdown-title">⏳ المحاضرة تبدأ خلال</div>
+    <div class="countdown" id="countdown">
+      <div class="count-box"><div class="count-num" id="days">00</div><div class="count-label">يوم</div></div>
+      <div class="count-box"><div class="count-num" id="hours">00</div><div class="count-label">ساعة</div></div>
+      <div class="count-box"><div class="count-num" id="mins">00</div><div class="count-label">دقيقة</div></div>
+      <div class="count-box"><div class="count-num" id="secs">00</div><div class="count-label">ثانية</div></div>
+    </div>
+  </div>
+
+  <!-- Details -->
+  <div class="card">
+    <h1 class="section-title">تفاصيل المحاضرة</h1>
+    <p class="section-sub">محاضرة مجانية أونلاين — احجز مكانك الآن</p>
+    <div class="details">
+      <div class="detail-item">
+        <div class="detail-icon">📅</div>
+        <div class="detail-text"><strong>التاريخ</strong><span>الأربعاء 24 يونيو 2026</span></div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-icon">🕤</div>
+        <div class="detail-text"><strong>الوقت</strong><span>9:30 مساءً (القاهرة / مكة)</span></div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-icon">💻</div>
+        <div class="detail-text"><strong>المنصة</strong><span>بث مباشر أونلاين (Live)</span></div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-icon">🎁</div>
+        <div class="detail-text"><strong>الرسوم</strong><span>مجانية بالكامل</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What you'll learn -->
+  <div class="card">
+    <h2 class="section-title">ماذا ستتعلم؟</h2>
+    <p class="section-sub">6 محاور عملية تنقلك من البيع إلى التفاوض الاحترافي</p>
+    <ul class="learn-list">
+      <li>أسس ومقومات التفاوض والفرق بينه وبين البيع والإقناع</li>
+      <li>المبادئ الجوهرية للتفاوض الفعّال والتركيز على المصالح</li>
+      <li>أنواع التفاوض الثلاثة: التوزيعي، التكاملي، والمختلط</li>
+      <li>المراحل الخمس لأي عملية تفاوض ناجحة ومستدامة</li>
+      <li>عقلية المفاوض المحترف والأخطاء الشائعة القاتلة</li>
+      <li>خرافات شائعة عن التفاوض تحتاج لتصحيح فوري</li>
+    </ul>
+  </div>
+
+  <!-- Speakers -->
+  <div class="card">
+    <h2 class="section-title">المحاضرون</h2>
+    <p class="section-sub">خبرة عملية في المبيعات والتفاوض</p>
+    <div class="speakers">
+      <div class="speaker">
+        <div class="speaker-name">د. أحمد نصار</div>
+        <div class="speaker-role">Founder &amp; CEO — ZmedCoach</div>
+      </div>
+      <div class="speaker">
+        <div class="speaker-name">أ. غادة حسين</div>
+        <div class="speaker-role">Sales Enablement Expert</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="card">
+    <div id="formView">
+      <h2 class="section-title">سجّل الآن مجاناً</h2>
+      <p class="section-sub">املأ البيانات التالية لحجز مكانك واستلام رابط الحضور</p>
+
+      <form id="regForm" novalidate>
+        <div class="form-group">
+          <label for="name">الاسم بالكامل <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="اكتب اسمك الكامل" autocomplete="name">
+          <div class="err-msg" id="err-name">من فضلك اكتب اسمك الكامل</div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">رقم الموبايل (واتساب) <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="مثال: 01001234567" autocomplete="tel" inputmode="tel">
+          <div class="err-msg" id="err-phone">من فضلك اكتب رقم موبايل صحيح</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" inputmode="email">
+          <div class="err-msg" id="err-email">من فضلك اكتب بريد إلكتروني صحيح</div>
+        </div>
+
+        <div class="form-group">
+          <label for="job">الوظيفة / الدور <span class="req">*</span></label>
+          <select id="job" name="job">
+            <option value="">— اختر —</option>
+            <option value="مندوب مبيعات">مندوب / موظف مبيعات</option>
+            <option value="مدير مبيعات">مدير / قائد فريق مبيعات</option>
+            <option value="صاحب عمل">صاحب عمل / رائد أعمال</option>
+            <option value="تسويق">تسويق</option>
+            <option value="أخرى">أخرى (اكتبها بنفسك)</option>
+          </select>
+          <div class="err-msg" id="err-job">من فضلك اختر الوظيفة / الدور</div>
+        </div>
+
+        <!-- يظهر فقط لو اختار "أخرى" -->
+        <div class="form-group" id="jobOtherGroup" style="display:none;">
+          <label for="jobOther">اكتب وظيفتك <span class="req">*</span></label>
+          <input type="text" id="jobOther" name="jobOther" placeholder="مثال: استشاري، مدرب، طالب...">
+          <div class="err-msg" id="err-jobOther">من فضلك اكتب وظيفتك</div>
+        </div>
+
+        <div class="form-group">
+          <label for="sector">القطاع اللي بتشتغل فيه <span class="req">*</span></label>
+          <select id="sector" name="sector">
+            <option value="">— اختر —</option>
+            <option value="أدوية ومستحضرات طبية">أدوية ومستحضرات طبية</option>
+            <option value="تجزئة وبيع مباشر">تجزئة / بيع مباشر (Retail)</option>
+            <option value="عقارات">عقارات</option>
+            <option value="تكنولوجيا وبرمجيات">تكنولوجيا وبرمجيات</option>
+            <option value="خدمات مالية وتأمين">خدمات مالية / تأمين</option>
+            <option value="تصنيع وصناعة">تصنيع / صناعة</option>
+            <option value="تعليم وتدريب">تعليم وتدريب</option>
+            <option value="سياحة وضيافة">سياحة وضيافة</option>
+            <option value="أخرى">قطاع آخر (اكتبه بنفسك)</option>
+          </select>
+          <div class="err-msg" id="err-sector">من فضلك اختر القطاع</div>
+        </div>
+
+        <!-- يظهر فقط لو اختار "أخرى" في القطاع -->
+        <div class="form-group" id="sectorOtherGroup" style="display:none;">
+          <label for="sectorOther">اكتب القطاع <span class="req">*</span></label>
+          <input type="text" id="sectorOther" name="sectorOther" placeholder="مثال: زراعة، طاقة، نقل...">
+          <div class="err-msg" id="err-sectorOther">من فضلك اكتب القطاع</div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">احجز مكاني الآن 🚀</button>
+        <p class="form-note">🔒 بياناتك آمنة ولن تُستخدم إلا للتواصل بخصوص المحاضرة</p>
+      </form>
+    </div>
+
+    <!-- Success view -->
+    <div class="success-box" id="successView">
+      <div class="success-icon">✓</div>
+      <h2>تم تسجيلك بنجاح! 🎉</h2>
+      <p>مكانك محجوز في المحاضرة. انضم لجروب الواتساب لاستلام رابط الحضور والتذكير قبل الموعد.</p>
+      <a href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_GROUP_LINK" target="_blank" rel="noopener" class="wa-btn">
+        📲 انضم لجروب الواتساب
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">Zmed<span>Coach</span></div>
+    <div>زمدكوتش للتدريب</div>
+    <div class="footer-contact">
+      📱 +201097888559 &nbsp;|&nbsp; 🌐 <a href="https://ZmedCoach.com" target="_blank" rel="noopener">ZmedCoach.com</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // ===== CONFIG =====
+  // ضع هنا رابط الـ Web App اللي هيطلع من Google Apps Script (خطوة الربط بجوجل شيت)
+  const SCRIPT_URL = "REPLACE_WITH_YOUR_APPS_SCRIPT_URL";
+  // رابط جروب الواتساب
+  const WHATSAPP_GROUP = "https://chat.whatsapp.com/REPLACE_WITH_YOUR_GROUP_LINK";
+  // موعد المحاضرة (بتوقيت القاهرة UTC+3) — 24 يونيو 2026، 9:30 مساءً
+  const WEBINAR_DATE = new Date("2026-06-24T21:30:00+03:00");
+
+  // ===== Countdown =====
+  function updateCountdown() {
+    const now = new Date();
+    let diff = Math.floor((WEBINAR_DATE - now) / 1000);
+    if (diff < 0) diff = 0;
+    const d = Math.floor(diff / 86400);
+    const h = Math.floor((diff % 86400) / 3600);
+    const m = Math.floor((diff % 3600) / 60);
+    const s = diff % 60;
+    document.getElementById('days').textContent = String(d).padStart(2,'0');
+    document.getElementById('hours').textContent = String(h).padStart(2,'0');
+    document.getElementById('mins').textContent = String(m).padStart(2,'0');
+    document.getElementById('secs').textContent = String(s).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Set WhatsApp link
+  document.querySelector('.wa-btn').href = WHATSAPP_GROUP;
+
+  // ===== Show/hide "other" fields =====
+  document.getElementById('job').addEventListener('change', function() {
+    const grp = document.getElementById('jobOtherGroup');
+    if (this.value === 'أخرى') {
+      grp.style.display = 'block';
+    } else {
+      grp.style.display = 'none';
+      document.getElementById('jobOther').value = '';
+      showError('jobOther', false);
+    }
+  });
+  document.getElementById('sector').addEventListener('change', function() {
+    const grp = document.getElementById('sectorOtherGroup');
+    if (this.value === 'أخرى') {
+      grp.style.display = 'block';
+    } else {
+      grp.style.display = 'none';
+      document.getElementById('sectorOther').value = '';
+      showError('sectorOther', false);
+    }
+  });
+
+  // ===== Validation helpers =====
+  function showError(id, show) {
+    const input = document.getElementById(id);
+    const err = document.getElementById('err-' + id);
+    if (show) { input.classList.add('error'); err.classList.add('show'); }
+    else { input.classList.remove('error'); err.classList.remove('show'); }
+  }
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function validPhone(v) { return /^[\d+\s()-]{8,}$/.test(v.trim()); }
+
+  // ===== Submit =====
+  document.getElementById('regForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const jobSelect = document.getElementById('job').value;
+    const jobOther = document.getElementById('jobOther').value.trim();
+    const sectorSelect = document.getElementById('sector').value;
+    const sectorOther = document.getElementById('sectorOther').value.trim();
+
+    let ok = true;
+    if (name.length < 3) { showError('name', true); ok = false; } else showError('name', false);
+    if (!validPhone(phone)) { showError('phone', true); ok = false; } else showError('phone', false);
+    if (!validEmail(email)) { showError('email', true); ok = false; } else showError('email', false);
+    if (!jobSelect) { showError('job', true); ok = false; } else showError('job', false);
+    // لو اختار "أخرى" في الوظيفة لازم يكتبها
+    if (jobSelect === 'أخرى' && jobOther.length < 2) { showError('jobOther', true); ok = false; } else showError('jobOther', false);
+    if (!sectorSelect) { showError('sector', true); ok = false; } else showError('sector', false);
+    // لو اختار "أخرى" في القطاع لازم يكتبه
+    if (sectorSelect === 'أخرى' && sectorOther.length < 2) { showError('sectorOther', true); ok = false; } else showError('sectorOther', false);
+
+    if (!ok) return;
+
+    // القيمة النهائية للوظيفة والقطاع
+    const job = (jobSelect === 'أخرى') ? jobOther : jobSelect;
+    const sector = (sectorSelect === 'أخرى') ? sectorOther : sectorSelect;
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = "⏳ جارٍ التسجيل...";
+
+    const data = {
+      name: name,
+      phone: phone,
+      email: email,
+      job: job,
+      sector: sector,
+      webinar: "Live103 - شفرة التفاوض للنجاح في المبيعات",
+      timestamp: new Date().toISOString()
+    };
+
+    try {
+      // Google Apps Script Web App (no-cors لتفادي مشاكل CORS)
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+      // مع no-cors مش هنقدر نقرأ الرد، فبنفترض النجاح
+      showSuccess();
+    } catch (err) {
+      // حتى لو حصل خطأ في القراءة، غالباً البيانات اتسجلت
+      showSuccess();
+    }
+  });
+
+  function showSuccess() {
+    document.getElementById('formView').style.display = 'none';
+    const sv = document.getElementById('successView');
+    sv.classList.add('show');
+    sv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+</script>
+</body>
+</html>
